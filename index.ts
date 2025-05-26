@@ -25,7 +25,7 @@ function showAlert(message: string, type: 'success' | 'danger') {
     }, 3000);
 }
 
-function registerBtnCliced(){
+document.addEventListener('DOMContentLoaded', () => {
     const registerBtn = document.getElementById('registerBtn');
     if (registerBtn) {
         registerBtn.addEventListener('click', () => {
@@ -50,4 +50,4 @@ function registerBtnCliced(){
             showAlert("Registration successful! Welcome " + fullName, "success");
         });
     }
-}
+});
